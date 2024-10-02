@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault();
         const userData = JSON.parse(localStorage.getItem("user"));
 
-        if (username.password == userData.password && username.confirmPassword == userData.confirmPassword) {
+        if (username.password === userData.password && username.confirmPassword === userData.confirmPassword) {
             alert("Login successfully");
             navigate('/')
         }
